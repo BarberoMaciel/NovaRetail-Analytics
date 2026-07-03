@@ -1,0 +1,18 @@
+version: "3.9"
+
+services:
+  novaretail-api:
+    build: .
+    container_name: novaretail-api
+
+    ports:
+      - "8000:8000"
+
+    volumes:
+      - .:/app
+      - C:/Users/Usuario/AppData/Roaming/gcloud:/root/.config/gcloud:ro
+
+    environment:
+      GOOGLE_APPLICATION_CREDENTIALS: /root/.config/gcloud/application_default_credentials.json
+
+    restart: unless-stopped

@@ -1,7 +1,4 @@
-
-````md
 # NovaRetail Analytics – Backend & Automatización
-
 ##  Descripción del Proyecto
 
 NovaRetail Analytics es una solución de analítica de datos end-to-end que expone KPIs de negocio a través de una API desarrollada en FastAPI, utilizando Google BigQuery como Data Warehouse y una capa semántica basada en vistas SQL.
